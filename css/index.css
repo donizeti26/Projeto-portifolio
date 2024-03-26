@@ -8,8 +8,14 @@ body{
 }
 :root{
     --text-color-grey:#6D6D6D;
-}
+    --text-color-title:#135695;
+    --text-color-selection:#EA9600;
 
+}
+::selection {
+    background-color:var(--text-color-selection);
+
+}
 
 
 p{
@@ -24,7 +30,6 @@ p{
     margin-left: auto;
     position: relative;
     background-color: #EDEDED;
-    position: fixed;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -74,13 +79,39 @@ p{
     margin-top: auto;
     margin-bottom: auto;
     font-size: 30px;
-
+    padding: 23px;
     position: relative;
 }
 
 
+#language{
+    display: flex;
+    width: 60px;
+    justify-content: space-around;
+}
 
+.navbar-contact {
+    overflow: visible;
+    position: absolute;
+    display: none;
+    text-decoration: none;
+    list-style: none;
+}
+h1,h3{
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+    line-height: 1.4em;
 
+    color:var(--text-color-title);
+}
+h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+h3{
+    font-size: 25px;
+    font-weight: 700;
+}
 
 
 /*------------------*/
