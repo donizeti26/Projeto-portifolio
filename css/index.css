@@ -18,7 +18,7 @@ body{
 }
 
 
-p{
+p {
     font-family: "Open Sans", sans-serif;
 }
 #img-logo{width: 200px;}
@@ -67,6 +67,10 @@ p{
     font-size: 15px;
     font-weight: 600;
     word-break: break-all;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar a{
     align-items: center;
@@ -109,14 +113,90 @@ h1{
     font-size: 40px;
 }
 h3{
+    text-align: end;
+    width: 70%;
     font-size: 25px;
     font-weight: 700;
 }
 
+/*------------------------------------*/
+.title-description{
+grid-area: title-description;
+}
+.img-description{
+grid-area: img-description;
+}
+.text-description-one{
+grid-area: text-description-one;
+}
+.text-description-two{
+grid-area: text-description-two;
+}
+
+#initial-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:"title-description img-description text-description-two"
+                        "text-description-one img-description text-description-two"
+}
+
+
+.text-description-one , .text-description-two p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-size: 1rem;
+    line-height: 1.6em;
+    color:var(--text-color-grey);
+    
+}
+
+#initial-description{
+
+    width: 80%;
+}
+.img-description img{
+    width: 340px;
+}
+.content-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/linha-bg.png);
+    background-position: 0px -600px;
+    background-size: 115% auto;
+    padding: 50px 0px 50px 0px;
+    background-repeat: no-repeat;
+}
 
 /*------------------*/
 @media (max-width: 700px) {
     .navbar-option{
         display: none;
+    }
+    #initial-description{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .img-description img{
+        width: 420px;
+    }
+    .title-description{
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .content-description{
+        background-position: -80px 15px;
+    background-size: 150% auto;
+    padding: 25px 0px 25px 0px;
     }
 }
