@@ -171,7 +171,25 @@ grid-area: text-description-two;
 }
 
 /*------------------*/
-@media (max-width: 700px) {
+.background-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-video p{
+/*------------------*/
+    font-family:"Montserrat", Sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+
+
+
+
+/*------------------*/
+@media (max-width: 1100px) {
     .navbar-option{
         display: none;
     }
