@@ -213,12 +213,40 @@ grid-area: text-description-two;
     position: absolute;
 }
 
-.colage-img{
+.colage-group{
+    width: 101%;
     display: flex;
+    margin: 0 0px -4px 0;
+
 }
+#teste{
+
+}
+#img-operator{
+    width: 20%;
+    
+}
+#img-text-one{
+width: 40.05%;
 
 
+}
+#img-operations{
 
+width: 39.1%;
+}
+#img-vehicles{
+    width: 60%;
+}
+#img-collaborators{
+    width: 20%;
+}
+#img-office{
+    width: 19.666%;
+}
+.img-select{
+    width: 100%;
+}
 /*------------------*/
 @media (max-width: 1100px) {
     .navbar-option{
