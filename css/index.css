@@ -41,7 +41,7 @@ p {
 .navbar{
     background-color: #EDEDED;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
    /* max-width: 1400px; acho que vai limitar a tela*/
     min-height: 80px;
     width: 100%;
@@ -53,9 +53,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 16px;
     align-items: center;
-    width: 70%;
+    padding: 0px 70px 0px 70px;
 
     text-decoration: none;
     list-style: none;
@@ -67,7 +66,7 @@ p {
 }
 .navbar-option li{
     color:var(--text-color-grey);
-    padding: 8px;
+
     font-size: 15px;
     font-weight: 600;
     word-break: break-all;
@@ -75,7 +74,7 @@ p {
 
 }
 .navbar-option li > a{
-    padding: 23px 0px 40px 0px
+    padding: 33px 8px 40px 8px;
 }
 .navbar a{
     align-items: center;
@@ -143,30 +142,41 @@ ul li a{
     padding:10px;
     border-bottom: 1px solid rgba(66, 66, 66,11% );
 }
-
 .navbar-option li:hover{
-    background-color: var(--text-color-selection);
+        box-shadow: inset 0 100px 0 0  var(--text-color-selection); /*inset: sombra interna
+        0 desolamento horinzontal 100px desloc. vertical 0 desfoque 0 propagacao */
+    }
 
+.navbar-option li{
+    box-shadow: inset 0 0 0 0  var(--text-color-selection);
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
     cursor: pointer;
-
-}
-.navbar-option li :hover{
-    color: #EDEDED;
-}
-.navbar-option li a:hover{
-    background-color: var(--text-color-selection);
     
 }
 
 
-.dropdown:hover .dropdown-menu{
-    display: block;
-    background-color: red;
+
+/*para montar o tringulo fiz tres lados iguais, deixando 2 tranaprente para não ficar quadrao*/
+
+.arrow-down{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid;
+    margin-left:4px;
+}
+#contact{
+    align-items: center;
+    display: flex;
 }
 
-.dropdown-menu:hover >li{
-    color: red;
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
+
 h1,h3{
     font-family: "Montserrat", Sans-serif;
     text-transform: uppercase;
