@@ -74,7 +74,7 @@ p {
 
 }
 .navbar-option li > a{
-    padding: 33px 8px 40px 8px;
+    padding: 34px 8px 40px 8px;
 }
 .navbar a{
     align-items: center;
@@ -123,8 +123,7 @@ ul li a{
 .dropdown-menu{
     position: absolute;
     z-index: 3;
-    margin-left: -8px;
-    margin-top: 8px;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -145,8 +144,19 @@ ul li a{
 .navbar-option li:hover{
         box-shadow: inset 0 100px 0 0  var(--text-color-selection); /*inset: sombra interna
         0 desolamento horinzontal 100px desloc. vertical 0 desfoque 0 propagacao */
+        
     }
-
+.dropdown-menu a:hover{
+        background-color: var(--text-color-selection); /*inset: sombra interna
+        0 desolamento horinzontal 100px desloc. vertical 0 desfoque 0 propagacao */
+        
+}
+.dropdown-menu a{
+        transition: 0.4s;
+}
+.navbar-option li a:hover{
+    color: #EDEDED;
+}
 .navbar-option li{
     box-shadow: inset 0 0 0 0  var(--text-color-selection);
     -webkit-transition: ease-out 0.2s;
