@@ -12,13 +12,13 @@ Desenvolvimento (clone) do zero do <a href="https://bravolog.com.br/">site</a> p
 </p>
 
 <p align="center">
-  <img alt="Logo Bravo" widht:200px src="https://bravolog.com.br/wp-content/uploads/2021/11/logo-horizontal.svg">
+  <img alt="Logo Bravo" width="30%"src="https://bravolog.com.br/wp-content/uploads/2021/11/logo-horizontal.svg">
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="/assets/capture.png" width="50%">
+  <img alt="projeto DevLinks" src="/assets/capture.png" width="80%">
 </p>
 
 ## 🚀 Tecnologias
