@@ -12,7 +12,7 @@ Desenvolvimento (clone) do zero do <a href="https://bravolog.com.br/">site</a> p
 </p>
 
 <p align="center">
-  <img alt="Logo Bravo" src="https://bravolog.com.br/wp-content/uploads/2021/11/logo-horizontal.svg">
+  <img alt="Logo Bravo" widht:200px src="https://bravolog.com.br/wp-content/uploads/2021/11/logo-horizontal.svg">
 </p>
 
 <br>
