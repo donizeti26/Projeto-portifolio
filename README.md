@@ -18,7 +18,7 @@ Desenvolvimento (clone) do zero do <a href="https://bravolog.com.br/">site</a> p
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.jpg" width="100%">
+  <img alt="projeto DevLinks" src="/assets/capture.png" width="50%">
 </p>
 
 ## 🚀 Tecnologias
