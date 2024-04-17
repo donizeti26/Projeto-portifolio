@@ -1,4 +1,4 @@
-<h1 align="center"> ESTUDO Clone Bravo Portifólio </h1>
+<h1 align="center"> <strong>(OBJETO DE ESTUDO)<BR></strong> Clone Bravo Portifólio </h1>
 
 <p align="center">
 Desenvolvimento (clone) do zero do <a href="https://bravolog.com.br/">site</a> para fixar estudos de CSS, HTML, JS.
@@ -25,15 +25,17 @@ Desenvolvimento (clone) do zero do <a href="https://bravolog.com.br/">site</a> p
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+```
 - HTML e CSS
 - JavaScript
 - Git e Github
 - Figma
+```
 
 ## 💻 Projeto
 
 O site da bravo conta com sete areas disponíveis para pagina inicial.
-
+```
 - EMPRESA
 - SERVIÇOS
 - ESTRUTURA
@@ -41,11 +43,17 @@ O site da bravo conta com sete areas disponíveis para pagina inicial.
 - SUSTENTABILIDADE
 - HSE E QUALIDADE
 - CONTATO
+```
 
 ## 🔖 Layout
 
-Você pode visualizar o layout ORIGINAL através [DESSE LINK](https://bravolog.com.br/).
+Você pode visualizar o layout e site ORIGINAL através [DESSE LINK](https://bravolog.com.br/).
 
 ## :memo: Licença
 
+
 Esse projeto foi desenvolvido apenas com o intuito de estudo e aperfeiçoamento.
+
+## :thought_balloon: Objetivo
+
+O foco desse projeto foi puramente estudo, foram aplicadas somente as tec. HTML + CSS + JS. 

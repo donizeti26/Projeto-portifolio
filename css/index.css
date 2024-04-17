@@ -9,8 +9,9 @@ body{
 :root{
     --text-color-grey:#6D6D6D;
     --text-color-title:#135695;
-    --text-color-selection:#EA9600;
+    --text-color-selection:#3DA8D0;
     --text-color-gree:#47AB57;
+    --back-color-blue:#EDF2F8;
 
 }
 ::selection {
@@ -38,15 +39,21 @@ p {
     top: 0px;
     
 }
+
+/*-----------N A V B A R -------------------------*/
+ 
 .navbar{
-    background-color: #EDEDED;
+    background-color:var(--back-color-blue);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
    /* max-width: 1400px; acho que vai limitar a tela*/
     min-height: 80px;
     width: 100%;
     align-items: center;
     box-shadow: 0 0 12px #00000061;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
 }
 .navbar-option{
 
@@ -105,7 +112,45 @@ p {
     text-decoration: none;
     list-style: none;
 }
+.navbar-option li:hover{
+    box-shadow: inset 0 100px 0 0  var(--text-color-selection); /*inset: sombra interna
+    0 desolamento horinzontal 100px desloc. vertical 0 desfoque 0 propagacao */
+    
+}
+.navbar-option li a:hover{
+    color: #EDEDED;
+}
 
+.navbar-option li{
+    box-shadow: inset 0 0 0 0  var(--text-color-selection);
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    cursor: pointer;
+    
+}
+/*------------------B U T T O N  T O P---------------------*/
+#button-top{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    z-index: 7;
+    position: fixed;
+    background: #135695;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 30px;
+    bottom: 30px;
+    transition-delay: 250ms;
+
+}
+#button-top ion-icon{
+    font-size: 30px;
+    color: white;
+}
+/*----------------D R O P D O W N --------------------*/
+/*AREA DO DROPDOWN CONTATO*/
 .dropdown > a{
     padding-bottom: 10px;
 }
@@ -116,10 +161,6 @@ p {
 ul li a{
     display: inline-block;
 }
-
-
-/*AREA DO DROPDOWN CONTATO*/
-
 .dropdown-menu{
     position: absolute;
     z-index: 3;
@@ -141,11 +182,7 @@ ul li a{
     padding:10px;
     border-bottom: 1px solid rgba(66, 66, 66,11% );
 }
-.navbar-option li:hover{
-        box-shadow: inset 0 100px 0 0  var(--text-color-selection); /*inset: sombra interna
-        0 desolamento horinzontal 100px desloc. vertical 0 desfoque 0 propagacao */
-        
-    }
+
 .dropdown-menu a:hover{
         background-color: var(--text-color-selection); /*inset: sombra interna
         0 desolamento horinzontal 100px desloc. vertical 0 desfoque 0 propagacao */
@@ -154,16 +191,9 @@ ul li a{
 .dropdown-menu a{
         transition: 0.4s;
 }
-.navbar-option li a:hover{
-    color: #EDEDED;
-}
-.navbar-option li{
-    box-shadow: inset 0 0 0 0  var(--text-color-selection);
-    -webkit-transition: ease-out 0.2s;
-    -moz-transition: ease-out 0.2s;
-    transition: ease-out 0.2s;
-    cursor: pointer;
-    
+
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 
 
@@ -183,9 +213,6 @@ ul li a{
     display: flex;
 }
 
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
 
 h1,h3{
     font-family: "Montserrat", Sans-serif;
@@ -204,8 +231,22 @@ h3{
     font-size: 25px;
     font-weight: 700;
 }
+/*-------------------A B O U T  I N I C I O------------------------*/
+.site-content{
+    background-image: url(/assets/linha-bg.svg);
+    background-size: 100%;
+    background-position: bottom;
+}
 
-/*------------------------------------*/
+#about-initial{
+
+padding-top: 7%;
+display: flex;
+width: 90%;
+}
+/*--------------A P R E S E N T A Ç A O ----------------------*/
+
+
 .title-description{
 grid-area: title-description;
 }
@@ -249,9 +290,9 @@ grid-area: text-description-two;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/linha-bg.png);
+    background-image: url(/assets/linha-bg.svg);
     background-position: 0px -600px;
-    background-size: 115% auto;
+    /*background-size: 115% auto;*/
     padding: 50px 0px 50px 0px;
     background-repeat: no-repeat;
 }
@@ -299,6 +340,7 @@ grid-area: text-description-two;
     position: absolute;
 }
 
+/*-------------C O L A G E M -------------------*/
 .colage-group{
     width: 100%;
     display: flex;
@@ -341,36 +383,103 @@ width: 39.1%;
     text-transform: uppercase;
     color: var(--text-color-gree);
 }
-/*------------------*/
-@media (max-width: 1100px) {
-    .navbar-option{
-        display: none;
-    }
-    #initial-description{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-    .img-description img{
-        width: 420px;
-    }
-    .title-description{
-        text-align: center;
-    }
-    h1{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 20px;
-        text-align: center;
-        width: 100%;
-    }
-    .content-description{
-        background-position: -80px 15px;
-    background-size: 150% auto;
-    padding: 25px 0px 25px 0px;
-    }
-    .section-apresentation p{
-        font-size:1.1em;
-    }
+
+
+/*---------F O O T E R ---------------------------*/
+#footer{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+}
+#content-footer{
+    width: 75%;
+}
+#politic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding: 60px 0 40px 0 ;
+    margin: auto;
+
+    border-bottom: dotted 1px var(--text-color-grey);
+}
+#politic a{
+    text-decoration: none;
+    font-family: "Open Sans", Sans-serif;
+    color: var(--text-color-grey);
+    font-size: 15px;
+}
+#politic a:hover{
+    color: var(--text-color-selection);
+}
+#links{
+    display: flex;
+    width: 100%;
+    padding: 50px 5px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+#links img{
+    width: 190px;
+}
+#logo-footer{
+    
+}
+#link-site{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#link-site div{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+}
+#link-site div a{
+    text-decoration: none;
+    color: var(--text-color-grey);
+    font-family: "Open Sans", Sans-serif;
+    font-size: 12px;
+    padding-bottom: 5px;
+
+}
+#link-site div a:hover{
+    color: var(--text-color-selection);
+    
+}
+
+#link-site-content{
+
+}
+#link-social{
+    
+}
+#copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+#copyright p{
+    color: #54595f;
+    font-size: 11px;
+    font-weight: 400;
+}
+#link-social{
+    width: 20%;
+    display: flex;
+    gap: 8%;
+    justify-content: right;
+}
+#link-social ion-icon{
+    color: #69727d;
+    font-size: 20px;
+    font-weight: 200;
+}
+#link-social ion-icon:hover{
+    color: var(--text-color-selection);
+
 }

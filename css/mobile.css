@@ -1,0 +1,32 @@
+@media (max-width: 1100px) {
+    .navbar-option{
+        display: none;
+    }
+    #initial-description{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .img-description img{
+        width: 420px;
+    }
+    .title-description{
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .content-description{
+        background-position: -80px 15px;
+    background-size: 150% auto;
+    padding: 25px 0px 25px 0px;
+    }
+    .section-apresentation p{
+        font-size:1.1em;
+    }
+}
