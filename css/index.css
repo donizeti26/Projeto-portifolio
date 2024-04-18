@@ -5,14 +5,16 @@
 }
 body{
     height: 100vh;
-    background-color: var(--back-color-blue);
+    background-color: var(--back-color-wb);
 }
 :root{
-    --text-color-grey:#6D6D6D;
+    --text-color-gw:#6D6D6D;
     --text-color-title:#135695;
     --text-color-selection:#3DA8D0;
     --text-color-gree:#47AB57;
-    --back-color-blue:#EDF2F8;
+    --back-color-wb:#EDF2F8;
+    --text-color-wb:#232834;
+    --switch-bg-url: url(/assets/sun.svg);
 
 }
 ::selection {
@@ -20,6 +22,15 @@ body{
     color: #000000;
 
 }
+
+.shadow{
+    --switch-bg-url: url(/assets/moon-stars.svg);
+    --back-color-wb:#232834;
+    --text-color-gw:#EDF2F8;
+    --text-color-wb:#EDF2F8;
+
+}
+
 
 
 p {
@@ -39,13 +50,13 @@ p {
     margin-top: 0px;
     margin-bottom: 0px;
     top: 0px;
-    background-color: var(--back-color-blue);
+    background-color: var(--back-color-wb);
 }
 
 /*-----------N A V B A R -------------------------*/
  
 .navbar{
-    background-color:var(--back-color-blue);
+    background-color:var(--back-color-wb);
     display: flex;
     justify-content: space-evenly;
    /* max-width: 1400px; acho que vai limitar a tela*/
@@ -74,7 +85,7 @@ p {
     
 }
 .navbar-option li{
-    color:var(--text-color-grey);
+    color:var(--text-color-gw);
 
     font-size: 15px;
     font-weight: 600;
@@ -88,7 +99,7 @@ p {
 .navbar a{
     align-items: center;
     justify-content: center;
-    color:var(--text-color-grey);
+    color:var(--text-color-gw);
 
 }
 
@@ -257,7 +268,13 @@ display: flex;
 }
 #text-content h1 , p{
     text-align: right;
+    color: var(--text-color-gw);
 }
+#text-content h1{
+    text-align: right;
+    color: var(--text-color-selection);
+}
+
 #div-icon-nt{
     width: 100%;
     height: 100%;
@@ -273,7 +290,7 @@ display: flex;
 
 
 .title-sections{
-    color: #000000;
+    color: var(--text-color-wb);
     text-transform: capitalize;
     text-align: center;
 
@@ -313,7 +330,7 @@ grid-area: text-description-two;
     font-size: 15px;
     font-size: 1rem;
     line-height: 1.6em;
-    color:var(--text-color-grey);
+    color:var(--text-color-gw);
     
 }
 
@@ -333,7 +350,7 @@ grid-area: text-description-two;
     /*background-size: 115% auto;*/
     padding: 50px 0px 50px 0px;
     background-repeat: no-repeat;
-    background-color: var(--back-color-blue);
+    background-color: var(--back-color-wb);
 
 }
 
@@ -383,10 +400,10 @@ grid-area: text-description-two;
 /*-------------C O L A G E M -------------------*/
 #skill-content .title-sections{
     padding: 3%;
-    background-color: #FFFFFF;
+    background-color: var(--text-color-wb);
 }
 #section-skill{
-    background-color: #FFFFFF;
+    background-color: var(--back-color-wb);
     display: flex;
     width: 100%;
     height: 100%;
@@ -507,7 +524,7 @@ background: #FFFFFF;
     padding: 60px 0 40px 0 ;
     margin: auto;
 
-    border-bottom: dotted 1px var(--text-color-grey);
+    border-bottom: dotted 1px var(--text-color-gw);
 }
 #politic a{
     text-decoration: none;
@@ -650,64 +667,38 @@ background-size: 100%; }
                 background-size: 100%; }
 /*----------------*/
 /* The switch - the box around the slider */
-.switch {
+
+
+#checkbox{
+    display: none;
+}
+.switch{
     position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
+    background-color: #151515;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition:all .5s ease-in-out;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
+}
+.slider{
     position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
+    background: white var(--switch-bg-url) no-repeat center;
     border-radius: 50%;
-  }
+
+    width: 30px;
+    height: 30px;
+    transition: all .5s ease-in-out;
+}
+
+#checkbox:checked ~ .switch {
+    background-color: rgb(202, 202, 202) ;
+}
+#checkbox:checked ~ .switch .slider{
+    transform: translateX(40px);
+
+}
+

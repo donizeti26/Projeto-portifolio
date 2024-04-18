@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="shadow">
     <header>
       <div class="content">
         <div class="navbar">
@@ -131,9 +131,10 @@
               <ion-icon name="search-outline"></ion-icon>
             </a>
           </div>
-          <label class="switch" onclick="toggleMode()">
-            <input type="checkbox">
-            <span class="slider round"></span>
+
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox" class="switch" onclick="toggleMode()">
+            <span class="slider"></span>
           </label>
 
         </div>
