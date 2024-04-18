@@ -1,7 +1,7 @@
-<h1 align="center"> <strong>(OBJETO DE ESTUDO)<BR></strong> Clone Bravo Portifólio </h1>
+<h1 align="center"> <strong>OBJETO DE ESTUDO<BR></strong> </h1>
 
 <p align="center">
-Desenvolvimento (clone) do zero do <a href="https://bravolog.com.br/">site</a> para fixar estudos de CSS, HTML, JS.
+Desenvolvimento do zero do <a">site</a> para fixar estudos de CSS, HTML, JS.
 </p>
 
 <p align="center">
@@ -11,15 +11,8 @@ Desenvolvimento (clone) do zero do <a href="https://bravolog.com.br/">site</a> p
   <a href="#memo-licença">Licença</a>
 </p>
 
-<p align="center">
-  <img alt="Logo Bravo" width="30%"src="https://bravolog.com.br/wp-content/uploads/2021/11/logo-horizontal.svg">
-</p>
-
 <br>
 
-<p align="center">
-  <img alt="projeto DevLinks" src="/assets/capture.png" width="80%">
-</p>
 
 ## 🚀 Tecnologias
 
@@ -47,7 +40,7 @@ O site da bravo conta com sete areas disponíveis para pagina inicial.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout e site ORIGINAL através [DESSE LINK](https://bravolog.com.br/).
+Você pode visualizar o layout e site ORIGINAL através [DESSE LINK]().
 
 ## :memo: Licença
 
