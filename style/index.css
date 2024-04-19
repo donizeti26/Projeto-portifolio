@@ -17,7 +17,7 @@ body{
     --text-color-gree:#47AB57;
     --back-color-wb:#EDF2F8;
     --text-color-wb:#232834;
-    --switch-bg-url: url(/assets/sun.svg);
+    --switch-bg-url: url(./assets/sun.svg);
 
 }
 ::selection {
@@ -30,7 +30,7 @@ body{
     --footer-color:#1e222c;
     --night-color-bw:#2f3647;
     --icon-color-skill:#424a5e;
-    --switch-bg-url: url(/assets/moon-stars.svg);
+    --switch-bg-url: url(./assets/moon-stars.svg);
     --back-color-wb:#232834;
     --text-color-gw:#EDF2F8;
     --text-color-wb:#EDF2F8;
