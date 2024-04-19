@@ -36,8 +36,32 @@ function toggleMode(){
 
 
 var english= window.document.getElementById("language-usa")
-english.addEventListener('click', openenglish)
+var portuguese= window.document.getElementById("language-br")
 
-function openenglish(){
-    console.log("OK!")
+english.addEventListener('click', langeng)
+portuguese.addEventListener('click', langbr)
+
+
+function langeng(){
+    
+    var lang = document.querySelector("html")
+
+    if(lang.lang == 'pt-br'){
+        lang.setAttribute('lang','en-us')
+        document.getElementsByClassName("navbar-option").children().eq(0).text("About")
+    }
+
+}
+
+function langbr(){
+    
+    var lang = document.querySelector("html")
+
+    if(lang.lang == 'en-us'){
+        lang.setAttribute('lang','pt-br')
+
+    }
+
+
+
 }
