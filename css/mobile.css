@@ -30,6 +30,20 @@
         font-size:1.1em;
     }
 
+
+
+    #icon-instagram{
+        left: 60%;
+        top: 8%;
+    }
+    #icon-two, #icon-one{
+        animation: none;
+        display: none;
+    }
+    #about-img{
+        animation: none;
+    }
+
 /*-------------------------*/
 
 #text-content h1, p {

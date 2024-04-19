@@ -8,6 +8,9 @@ body{
     background-color: var(--back-color-wb);
 }
 :root{
+    --footer-color:#232834;
+    --night-color-bw:#EDF2F8;
+    --icon-color-skill:#edf2f8;
     --text-color-gw:#6D6D6D;
     --text-color-title:#135695;
     --text-color-selection:#3DA8D0;
@@ -24,6 +27,9 @@ body{
 }
 
 .shadow{
+    --footer-color:#1e222c;
+    --night-color-bw:#2f3647;
+    --icon-color-skill:#424a5e;
     --switch-bg-url: url(/assets/moon-stars.svg);
     --back-color-wb:#232834;
     --text-color-gw:#EDF2F8;
@@ -273,6 +279,7 @@ display: flex;
 #text-content h1{
     text-align: right;
     color: var(--text-color-selection);
+    text-transform: capitalize;
 }
 
 #div-icon-nt{
@@ -280,13 +287,84 @@ display: flex;
     height: 100%;
 
 }
+#icon-instagram, #icon-one, #icon-two{
+
+    position: absolute;
+}
+#icon-one{
+    left: 10%;
+    top: 15%;
+
+}
+#icon-two{
+    left: 2%;
+}
+#icon-instagram{
+    left: 25%;
+    top: 15%;
+animation: instagram 1s infinite alternate;
+
+}
 #icon-nt{
     width: 280px;
     height: 130px;
-    position: relative;
-    
+    position: absolute;
+    top: 55%;
 
 }
+
+
+#about-img{
+animation: instagram 5s infinite alternate;
+
+}
+
+#icon-two, #icon-one{
+animation: icons 3s infinite alternate;
+}
+
+@keyframes instagram {
+    from{
+        transform: translateY(10px)
+    }
+    to {
+
+        transform: translateY(-10px)
+
+
+    }
+    
+}
+
+
+@keyframes icons {
+    from{
+        transform: rotate(10deg)
+    }
+    to {
+
+        transform: rotate(-10deg)
+
+    }
+    
+}
+
+#icon-nt{
+    animation:  2s infinite alternate;
+}
+
+@keyframes move {
+    from{
+        transform: rotate(-10deg)
+    }
+    to {
+        transform: rotate(10deg)
+
+    }
+    
+}
+
+
 
 
 .title-sections{
@@ -369,7 +447,7 @@ grid-area: text-description-two;
     font-weight: 700;
     font-size: 1.7em;
     text-align: center;
-    color: #EDEDED;
+    color: #EDF2F8
 }
 
 .section-apresentation > .background-video{
@@ -387,7 +465,7 @@ grid-area: text-description-two;
 }
 
 .elementor-background-overlay{
-    background-color: var(--text-color-selection);
+    background-color:#232834;
     opacity: 0.85;
     height: 100%;
     width: 100%;
@@ -400,7 +478,7 @@ grid-area: text-description-two;
 /*-------------C O L A G E M -------------------*/
 #skill-content .title-sections{
     padding: 3%;
-    background-color: var(--text-color-wb);
+    background-color: var(--back-color-wb);
 }
 #section-skill{
     background-color: var(--back-color-wb);
@@ -425,7 +503,7 @@ grid-area: text-description-two;
 
 height: 120px;
 width: 120px;
-background: #FFFFFF;
+background: var(--icon-color-ski);
  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
   border-radius: 31px;
 }
@@ -458,7 +536,7 @@ background: #FFFFFF;
 /*----------  F E E D  B A C K ----------*/
 
 #feedback{
-    background-color: #FFFFFF;
+    background-color: var(--back-color-wb);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -475,7 +553,7 @@ background: #FFFFFF;
     align-items: center;
     padding: 50px;
     width: 60%;
-    background: #FFFFFF;
+    background:var(--night-color-bw);
     box-shadow: -2px 5px 31.3px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     justify-content: space-around;
@@ -509,7 +587,7 @@ background: #FFFFFF;
 
 /*---------F O O T E R ---------------------------*/
 #footer{
-    background-color: #232834;
+    background-color: var(--footer-color);
     display: flex;
     justify-content: center;
 }
@@ -607,20 +685,9 @@ background: #FFFFFF;
 
 /*------------------*/
 
-#icon-nt{
-    animation: move 2s infinite alternate;
-}
 
-@keyframes move {
-    from{
-        transform: rotate(-20deg)
-    }
-    to {
-        transform: rotate(10deg)
 
-    }
-    
-}
+
 .icons8-html-5 { 
     display: inline-block;
     width: 80px;
@@ -674,7 +741,7 @@ background-size: 100%; }
 }
 .switch{
     position: relative;
-    background-color: #151515;
+    background-color: #232834;
     width: 80px;
     height: 40px;
     border-radius: 40px;
