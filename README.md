@@ -1,5 +1,13 @@
 <h1 align="center"> <strong>Portifólio<BR></strong> </h1>
 
+
+<img align="center" width="200px" src="https://media1.giphy.com/media/eFBlVhUPr75urYvSwE/200w.gif?cid=82a1493bosx2a3k2syjhrxetxbh5sncfzyoji8hmn2f1mkd8&ep=v1_gifs_related&rid=200w.gif&ct=g"/>
+
+
+
+
+<br>
+
 <p align="center">
 Desenvolvimento do zero de um <a">site</a> de portifólio para fixar estudos de CSS, HTML, JS.
 </p>

@@ -597,6 +597,7 @@ background: var(--icon-color-ski);
     text-decoration: none;
 }
 #text-coment strong{
+    color: var(--text-color-wb);
     font-size: 20px;
     font-weight: 700;
     padding: 10% 0% 5% 0%;
