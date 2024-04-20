@@ -255,8 +255,37 @@ h3{
     font-weight: 700;
 }
 /*-------------------A B O U T  I N I C I O------------------------*/
+
+#button-about{
+    padding: 25px 45px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(79deg, #3DA8D0 0%, #006bff 100%);
+    border-radius: 7px;
+    border: none;
+    animation-delay: 1000ms;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+}
+#button-about:hover{
+    background: linear-gradient(224deg, #00c4ff 0%, #00d5ff 100%);
+}
+
+
+
+
 .site-content{
-    background-image: url(/assets/linha-bg.svg);
+    background-image: url(../assets/linha-bg.svg);
     background-size: 100%;
     background-position: bottom;
 }
@@ -271,6 +300,9 @@ display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
+}
+#text-content p{
+    padding-bottom: 8%;
 }
 #text-content h1 , p{
     text-align: right;
@@ -414,7 +446,7 @@ grid-area: text-description-two;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/linha-bg.svg);
+    background-image: url(../assets/linha-bg.svg);
     background-position: 0px -600px;
     /*background-size: 115% auto;*/
     padding: 50px 0px 50px 0px;

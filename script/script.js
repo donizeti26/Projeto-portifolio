@@ -48,7 +48,7 @@ function langeng(){
 
     if(lang.lang == 'pt-br'){
         lang.setAttribute('lang','en-us')
-        document.getElementsByClassName("navbar-option").children().eq(0).text("About")
+        document.getElementsByClassName("navbar-option")
     }
 
 }
