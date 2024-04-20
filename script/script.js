@@ -23,17 +23,21 @@ function colorRemove(){
 var toggle= window.document.getElementById("checkbox")
 toggle.addEventListener('click', toggleMode)
 
+var logo = window.document.getElementById("logo-dsn")
 
 function toggleMode(){
     if(toggle.checked){
         document.body.setAttribute('class', 'shadow')
+        logo.src="./assets/icon-white.svg"
+
     }else{
         document.body.setAttribute('class', 'light')
+        logo.src="./assets/icon-black.svg"
 
     }
 }
 
-
+/* M U D A R  I D I O M A */
 
 var english= window.document.getElementById("language-usa")
 var portuguese= window.document.getElementById("language-br")
@@ -65,3 +69,4 @@ function langbr(){
 
 
 }
+/* */

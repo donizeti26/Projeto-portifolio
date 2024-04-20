@@ -33,7 +33,7 @@
 
 
     #icon-instagram{
-        left: 60%;
+        left: 50%;
         top: 8%;
     }
     #icon-two, #icon-one{
@@ -42,12 +42,16 @@
     }
     #about-img{
         animation: none;
+        padding-top: 10%;
     }
 
 /*-------------------------*/
 
 #text-content h1, p {
-    text-align: justify;
+    text-align: center;
+}
+#text-content{
+    align-items: center;
 }
 #icon-nt {
     display: none;
@@ -68,5 +72,11 @@
     border-left: none;
     align-items: center;
 }
-
+#links{
+    flex-direction: column;
+    gap: 30px;
+}
+#link-social{
+    gap: 30px;
+}
 }

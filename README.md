@@ -47,7 +47,7 @@ Esse projeto foi desenvolvido apenas com o intuito de estudo e aperfeiçoamento.
 
 ## :thought_balloon: Objetivo
 
-O foco desse projeto foi puramente estudo, foram aplicadas somente as tec. HTML + CSS + JS. Procurei usar diversos "enfeites" para testar o conhecimento adiquirido em cursos realizaos. O projeto do site em si é razoavelmente simples, uma aplicação front-end sem muitas interações com o usuário, mas acredito que é a porta para projetos mais complexos em areas ainda desconheidas no momento
+O foco desse projeto foi puramente estudo, foram aplicadas somente as tec. HTML + CSS + JS. Procurei usar diversos "enfeites" para testar o conhecimento adiquirido em cursos realizados. O projeto do site em si é razoavelmente simples, uma aplicação front-end sem muitas interações com o usuário, mas acredito que é a porta para projetos mais complexos em areas ainda desconheidas no momento
 
 ## :file_folder: Considerações finais
 
