@@ -414,12 +414,14 @@ grid-area: text-description-one;
 }
 .text-description-two{
 grid-area: text-description-two;
+display: flex;
+align-items: center;
 }
 
 #initial-description{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-areas:"title-description img-description text-description-two"
                         "text-description-one img-description text-description-two"
 }
@@ -440,7 +442,7 @@ grid-area: text-description-two;
     width: 80%;
 }
 .img-description img{
-    width: 600px;
+    width: 500px;
 }
 .content-description{
     display: flex;
