@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+html {
+
+    scroll-behavior: smooth;
+  }
 body{
     height: 100vh;
     background-color: var(--back-color-wb);
@@ -190,7 +195,7 @@ ul li a{
 }
 .dropdown-menu a{
     display: block;
-    background-color:#EDEDED;
+    background-color:var(--night-color-bw);
     font-family: "Open Sans", Sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -801,3 +806,32 @@ background-size: 100%; }
 
 }
 
+
+
+
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--text-color-wb);
+    cursor: pointer;
+}
+
+
+
+.hamburguer::before,.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--text-color-wb);;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.navbar.active .navbar-option{
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+}

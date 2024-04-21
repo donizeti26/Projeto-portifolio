@@ -14,7 +14,7 @@ function colorAdd(){
 }
 
 function colorRemove(){
-    item.style.color = "var(--text-color-grey)"
+    item.style.color = "var(--text-color-wb)"
     
 }
 
@@ -69,4 +69,12 @@ function langbr(){
 
 
 }
-/* */
+/**/
+
+
+const hamburguer = document.querySelector("button.hamburguer")
+const nav = document.querySelector("div.navbar")
+
+hamburguer.addEventListener('click',()=>
+nav.classList.toggle("active"))
+
