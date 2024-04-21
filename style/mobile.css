@@ -8,7 +8,7 @@
         width: 90%;
     }
     .img-description img{
-        width: 420px;
+        width: 350px;
     }
     .title-description{
         text-align: center;
@@ -29,7 +29,8 @@
     .section-apresentation p{
         font-size:1.1em;
     }
-
+    #about-initial {
+        padding: 0;}
 
 
     #icon-instagram{
@@ -42,7 +43,7 @@
     }
     #about-img{
         animation: none;
-        padding-top: 10%;
+        padding-top: 30%;
     }
 
 /*-------------------------*/
