@@ -155,9 +155,6 @@
     opacity: 1;
 
 }
-.navbar.active .switch{
-    display: none;
-}
 
 .navbar.active .hamburguer{
     position: fixed;
@@ -173,4 +170,8 @@
     transform: rotate(-135deg);
     top: -8px;
 }
+}.navbar.active .switch{
+    display: none;
+    transition-duration: 3s;
+
 }
