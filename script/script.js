@@ -20,6 +20,7 @@ function colorRemove(){
 
 
 
+
 var toggle= window.document.getElementById("checkbox")
 toggle.addEventListener('click', toggleMode)
 
@@ -102,3 +103,35 @@ const nav = document.querySelector("div.navbar")
 hamburguer.addEventListener('click',()=>
 nav.classList.toggle("active"))
 
+
+
+
+/* CONFIGURAÇÕES MOBILE */
+
+
+let dropdown = document.querySelector('.dropdown')
+let nvbOption = document.querySelector('.navbar-option')
+let optDropdown = document.querySelector('#opt-dropdown-menu')
+let feedb = document.querySelector('#feedb')
+let newItem1;
+
+
+function verificarTamanhoDaTela() {
+    if (window.innerWidth < 768) {
+        newItem1 = document.createElement('li');
+        newItem1.innerHTML = `<a>Novo Item 1</a>`;
+
+        feedb.insertAdjacentHTML('afterend', newItem1)
+        nvbOption.removeChild(dropdown)
+
+    }else{
+        if (newItem1 && newItem1.parentNode === nvbOption){
+        nvbOption.removeChild(newItem1)
+    }
+    }
+}
+
+window.addEventListener('resize', verificarTamanhoDaTela);
+
+// Chamar a função uma vez para verificar o tamanho da tela quando a página é carregada
+verificarTamanhoDaTela();
