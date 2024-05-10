@@ -97,12 +97,17 @@ function trocarIdiomaUs(){
 /**/
 
 
+
 const hamburguer = document.querySelector("button.hamburguer")
 const nav = document.querySelector("div.navbar")
 
-hamburguer.addEventListener('click',()=>
-nav.classList.toggle("active"))
+hamburguer.addEventListener('click',()=>{
+    nav.classList.toggle("active")
+    document.body.classList.toggle('scrollOf')
+
+}
 
 
+)
 
 
