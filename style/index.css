@@ -4,10 +4,6 @@
     box-sizing: border-box;
 
 }
-html {
-
-    scroll-behavior: smooth;
-  }
 body{
     height: 100vh;
     background-color: var(--back-color-wb);
@@ -25,12 +21,6 @@ body{
     --switch-bg-url: url(../assets/sun.svg);
 
 }
-::selection {
-    background-color:var(--text-color-selection);
-    color: #000000;
-
-}
-
 .shadow{
     --footer-color:#1e222c;
     --night-color-bw:#2f3647;
@@ -41,8 +31,11 @@ body{
     --text-color-wb:#EDF2F8;
 
 }
-
-
+::selection {
+    background-color:var(--text-color-selection);
+    color: #000000;
+    
+}
 
 p {
     font-family: "Open Sans", sans-serif;
@@ -127,6 +120,7 @@ p {
     display: none;
     text-decoration: none;
     list-style: none;
+    
 }
 .navbar-option li:hover{
     box-shadow: inset 0 100px 0 0  var(--text-color-selection); /*inset: sombra interna
@@ -232,6 +226,7 @@ ul li a{
 #contact{
     align-items: center;
     display: flex;
+    
 }
 
 
@@ -254,6 +249,7 @@ h3{
 /*-------------------A B O U T  I N I C I O------------------------*/
 
 #button-about{
+    cursor: pointer;
     padding: 25px 45px;
     font-size: 18px;
     color: white;
@@ -261,16 +257,16 @@ h3{
     border-radius: 7px;
     border: none;
     animation-delay: 1000ms;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
 
-align-items: center;
-text-align: center;
-text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 
 }
@@ -830,4 +826,66 @@ background-size: 100%; }
 .navbar.active .navbar-option{
     clip-path: circle(1500px at 90% -15%);
     pointer-events: all;
+}
+
+
+#socialwindow.windowOf{
+    display: none;
+}
+
+#socialwindow.windowOn{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3fa9f5;
+    z-index: 100;
+}
+#socialwindow{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#windowsocial{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    color: white;
+    gap: 16px;
+}
+
+
+#windowsocial div{
+    padding-bottom: 60px;
+
+}
+#windowsocial a:hover{
+    color: var(--text-color-title);
+}
+
+#windowsocial a{
+ display: flex;
+justify-content: center ;
+align-items: center;
+
+}
+
+
+#close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #fcfcfcb2;
+    border-radius: 8px;
+}
+#close:hover{
+    border:1px solid var(--text-color-title);
+
 }

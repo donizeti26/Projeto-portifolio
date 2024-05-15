@@ -2,7 +2,7 @@ var area = window.document.getElementsByClassName("dropdown")[0]
 
 var item = window.document.getElementById("contact")
 
-
+let socialwindow = document.querySelector('#socialwindow')
 
 area.addEventListener('mouseenter', colorAdd, false)
 
@@ -103,7 +103,7 @@ const nav = document.querySelector("div.navbar")
 
 hamburguer.addEventListener('click',()=>{
     nav.classList.toggle("active")
-    document.body.classList.toggle('scrollOf')
+    desabilitarScroll()
 
 }
 
@@ -111,3 +111,24 @@ hamburguer.addEventListener('click',()=>{
 )
 
 
+function redesocial(){
+
+    if(socialwindow.classList.contains('windowOf')){
+        socialwindow.classList.remove('windowOf')
+        socialwindow.classList.add('windowOn')
+        desabilitarScroll()
+
+    }else if(socialwindow.classList.contains('windowOn')){
+        socialwindow.classList.remove('windowOn')
+        socialwindow.classList.add('windowOf')
+        habilitarScroll()
+    }
+
+}
+
+function desabilitarScroll() {
+    document.body.style.overflow = 'hidden';
+  }
+  function habilitarScroll() {
+    document.body.style.overflow = '';
+  }
