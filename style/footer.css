@@ -1,0 +1,91 @@
+
+/*---------F O O T E R ---------------------------*/
+#footer{
+    background-color: var(--footer-color);
+    display: flex;
+    justify-content: center;
+}
+#content-footer{
+    width: 75%;
+}
+#politic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding: 60px 0 40px 0 ;
+    margin: auto;
+
+    border-bottom: dotted 1px var(--text-color-gw);
+}
+#politic a{
+    text-decoration: none;
+    font-family: "Open Sans", Sans-serif;
+    color:#EDEDED;
+    font-size: 15px;
+}
+#politic a:hover{
+    color: var(--text-color-selection);
+}
+#links{
+    display: flex;
+    width: 100%;
+    padding: 50px 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#links img{
+    width: 190px;
+}
+
+#link-site{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#link-site div{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+}
+#link-site div a{
+    text-decoration: none;
+    color: #EDEDED;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 12px;
+    padding-bottom: 5px;
+
+}
+#link-site div a:hover{
+    color: var(--text-color-selection);
+    
+}
+
+
+#copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+#copyright p{
+    color: #EDEDED;
+    font-size: 11px;
+    font-weight: 400;
+}
+#link-social{
+    width: 20%;
+    display: flex;
+    gap: 8%;
+    justify-content: right;
+}
+#link-social ion-icon{
+    color: #EDEDED;
+    font-size: 20px;
+    font-weight: 200;
+}
+#link-social ion-icon:hover{
+    color: var(--text-color-selection);
+
+}

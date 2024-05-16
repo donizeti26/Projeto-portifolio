@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="stylesheet" href="./style/mobile.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link
@@ -53,11 +54,11 @@
 
           <ul class="navbar-option">
 
-            <li tabindex="2" ><a  href="#initial-description">Sobre</a></li>
+            <li tabindex="2" ><a onclick="scrollToElementById('scroll-about')">Sobre</a></li>
 
-            <li tabindex="3"><a>Trabalhos</a></li>
-            <li tabindex="4"><a>Hard Skills</a></li>
-            <li tabindex="5"><a>Feedbacks</a></li>
+            <li tabindex="3"><a onclick="scrollToElementById('scroll-jobs')">Trabalhos</a></li>
+            <li tabindex="4"><a onclick="scrollToElementById('scroll-skill')"">Hard Skills</a></li>
+            <li tabindex="5"><a onclick="scrollToElementById('scroll-feedback')">Feedback</a></li>
 
             <li tabindex="6" class="dropdown">
 
@@ -143,7 +144,7 @@
             <input id="button-about" type="button" value="ENTRAR EM CONTATO" onclick="redesocial()"></section>
           </div>
           </div>
-          <h1 class="title-sections"><span>Sobre</span>.</h1>
+          <h1 class="title-sections" id="scroll-about"><span>Sobre</span>.</h1>
 
       </section>
 
@@ -154,7 +155,7 @@
   <div id="initial-description">
 
     <div class="item-grid title-description">
-      <h1 id="sobre">README.md</h1>
+      <h1 >README.md</h1>
     </div>
         <div class="item-grid text-description-one">
           <p>
@@ -188,7 +189,7 @@ Aos 19 anos,mergulhei profundo em direção à faculdade, embarcando numa jornad
           <div class="elementor-background-overlay"></div>
         
       </section>
-<section id="skill-content">
+<section id="scroll-skill">
   <h1 class="title-sections">Hard <span>Skills</span>.</h1>
 
 
@@ -276,7 +277,7 @@ Aos 19 anos,mergulhei profundo em direção à faculdade, embarcando numa jornad
     </section>
 
 
-    <section id="feedback">
+    <section id="scroll-feedback">
       <h1 class="title-sections"><span>Feedback</span>.</h1>
       <div class="feedback-baloon">
 

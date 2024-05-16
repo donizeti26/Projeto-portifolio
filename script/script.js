@@ -14,7 +14,7 @@ function colorAdd(){
 }
 
 function colorRemove(){
-    item.style.color = "var(--text-color-wb)"
+    item.style.color = "var(--text-color-gw)"
     
 }
 
@@ -128,7 +128,36 @@ function redesocial(){
 
 function desabilitarScroll() {
     document.body.style.overflow = 'hidden';
-  }
-  function habilitarScroll() {
+}
+function habilitarScroll() {
     document.body.style.overflow = '';
-  }
+}
+
+
+
+function scrollToElement(meuElemento) {
+    // Obtém a posição do elemento em relação ao topo do documento
+    var elementPosition = meuElemento.getBoundingClientRect().top + window.scrollY;
+    
+    // Define o deslocamento dependendo do ID do elemento
+    var offset = meuElemento.id === 'scroll-feedback' ? 0 : 85;
+    
+    // Calcula a posição de rolagem com o deslocamento
+    var offsetPosition = elementPosition - offset;
+
+    // Realiza a rolagem suave até a posição calculada
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+}
+
+// Função auxiliar que recebe um ID, obtém o elemento e chama scrollToElement
+function scrollToElementById(elementId) {
+    var meuElemento = document.getElementById(elementId);
+    if (meuElemento) {
+        scrollToElement(meuElemento);
+    } else {
+        console.error('Elemento não encontrado:', elementId);
+    }
+}
