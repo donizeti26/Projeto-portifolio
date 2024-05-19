@@ -1,6 +1,8 @@
-var area = window.document.getElementsByClassName("dropdown")[0]
+let area = document.getElementsByClassName("dropdown")[0]
 
-var item = window.document.getElementById("contact")
+let item = document.getElementById("contact")
+
+let tema = document.querySelector(".switch")
 
 let socialwindow = document.querySelector('#socialwindow')
 
@@ -102,10 +104,21 @@ const hamburguer = document.querySelector("button.hamburguer")
 const nav = document.querySelector("div.navbar")
 
 hamburguer.addEventListener('click',()=>{
-    nav.classList.toggle("active")
-    desabilitarScroll()
 
-}
+
+
+    if(nav.classList.contains("active")){
+        nav.classList.remove("active")
+        tema.style.display ="flex"
+        habilitarScroll()
+    }else{
+        nav.classList.toggle("active")
+        tema.style.display ="none"
+        
+        desabilitarScroll()
+    }
+        
+    }
 
 
 )

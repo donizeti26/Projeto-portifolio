@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -160,7 +161,7 @@ p {
     align-items: center;
     right: 30px;
     bottom: 30px;
-
+cursor: pointer;
     
 
 }
@@ -681,7 +682,28 @@ background-size: 100%; }
 /*----------------*/
 /* The switch - the box around the slider */
 
+#scroll-jobs{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+.projeto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .projeto a {
+    text-decoration: none;
+    color: #0366d6;
+  }
+  .projeto a:hover {
+    text-decoration: underline;
+  }
 
+/*----------------------------*/
 #checkbox{
     display: none;
 }
