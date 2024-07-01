@@ -71,20 +71,10 @@ function trocarIdiomaUs(){
 
         titulo[1].innerHTML = `<span>About</span>.`
 
-        texto[1].innerHTML =`Born on January 26, 2000, in a small town called Manga, MG, he entered this world with a joke ready for life.
-        From an early age, his quirky humor and passion for computers made him a true master of digital laughter.
-        But even with all the fun under the Bahian sun (and that SUN), I knew that his destiny was beyond the happy sun,
+        texto[1].innerHTML =`Creating websites that adapt perfectly to any device, providing an impeccable user experience on smartphones, tablets and desktops. Tailored solutions that meet the specific needs of your business, using the most modern and effective technologies.
+"Working with a front-end developer is easy and extremely beneficial. You gain a partner who understands your needs and transforms your ideas into reality, with a touch of innovation and efficiency."        `
         
-        which was always cracking. br>.<br> At 19, I plunged deep into college, embarking on a journey of academic discovery. 
-          For a year and a half, I ventured into the facu classrooms. of Systems Analysis and Development,
-           hoping to find the algorithm for eternal happiness. However, the universe had other plans.          `
-        
-           texto[2].textContent =`            For some reasons I had to close college and landed in the chaotic and challenging world of logistics, in the busy city of Paulínia SP. Although stacking boxes and organizing stocks wasn’t exactly her childhood dream, I embraced the challenge.
-
-        <br>   
-        Today, I continue my journey, navigating the turbulent waters of career transition with a hand-drawn map and a quirky sense of humor. My dream? Finding a profession that not only fills your pockets, but also my heart with joy and satisfaction. With each line of code written I get closer to this goal.
-
-         `
+           texto[2].textContent =`In an ever-evolving digital world, first impressions are key. A front-end developer ensures that your website is not only visually appealing, but also functional and accessible across all platforms and devices. A good user interface (UI) and intuitive user experience (UX) can significantly increase customer satisfaction, conversion rates, and user retention.`
         texto[3].innerHTML=`IN SEARCH OF NEW PATHS, OPPORTUNITIES <br> AND A VACANCY IN GOOGLE`
         
 
