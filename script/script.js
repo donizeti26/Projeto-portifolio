@@ -164,3 +164,8 @@ function scrollToElementById(elementId) {
         console.error('Elemento não encontrado:', elementId);
     }
 }
+
+function closehbg(){
+    nav.classList.remove("active")
+
+}
